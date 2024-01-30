@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fetal Head Segmentation Using U-Net</title>
 </head>
 <body>
 
