@@ -1,37 +1,60 @@
-Fetal Head Segmentation Using U-Net - Project Readme
-Overview
-This project involves the implementation of a U-Net architecture for fetal head segmentation in ultrasound images, using PyTorch. The project showcases the application of deep learning in medical image analysis, particularly in segmenting fetal heads from ultrasound images.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetal Head Segmentation Using U-Net</title>
+</head>
+<body>
 
-Key Features
-Technology Stack: Utilizes libraries like NumPy, PyTorch, OpenCV, PIL, Pandas, and OS.
-Architecture: The U-Net model comprises 23 convolutional layers, tailored for detailed image segmentation.
-Image Resolution: Processes images of size 572x572 pixels.
-High Accuracy: Achieves a Dice score of 95.6% on the test set and a pixel-to-pixel accuracy of 97.4%.
-Hardware Used: Training and inference performed on an RTX 3080 Ti GPU.
-Data Augmentation: Includes random rotations, horizontal flips, and vertical flips to enhance model robustness.
-Dataset Size:
-Training: 799 images
-Validation: 200 images
-Testing: 335 images
-Binary Segmentation: Predicts binary masks for segmenting the fetal head.
-Loss Plotting: Visualizes training and validation loss over epochs.
-Early Stopping: Implements early stopping with checkpoints for saving the best model weights.
-Learning Parameters
-Learning Rate: 0.01
-Batch Size: 2
-Implementation Details
-U-Net Model: The U-Net model is designed specifically for medical image segmentation. The architecture includes a downsampling path to capture image context and an upsampling path for precise localization.
-Loss Function: A combination of Binary Cross Entropy and Dice Loss is used to compute the loss, optimizing both pixel accuracy and overlap.
-Performance Metrics: Dice score and pixel-to-pixel accuracy are the primary metrics for evaluating model performance.
-Usage
-Setup: Install required Python libraries (NumPy, PyTorch, OpenCV, PIL, Pandas, OS).
-Data Preparation: Collect and preprocess ultrasound images of fetal heads along with their corresponding segmentation masks.
-Training: Train the U-Net model on the prepared dataset. Monitor training and validation loss.
-Evaluation: Evaluate the model on the test set using metrics like Dice score and pixel-to-pixel accuracy.
-Inference: Use the trained model for segmenting fetal heads in new ultrasound images.
-Additional Information
-Data Augmentation: To ensure the model generalizes well, data augmentation techniques like random rotations and flips are utilized.
-Early Stopping and Checkpoints: Early stopping prevents overfitting, and checkpoints save the model with the best validation performance.
-Visualization: Loss plots provide insights into the training process and model convergence.
-Conclusion
-The U-Net model for fetal head segmentation demonstrates the effective use of deep learning in medical image analysis. With high accuracy and robustness, this model can assist in automated ultrasound image analysis, contributing to prenatal care and diagnostics.
+<h1>Fetal Head Segmentation Using U-Net</h1>
+
+<h2>Overview</h2>
+<p>This project involves the implementation of a U-Net architecture for fetal head segmentation in ultrasound images, using PyTorch. The project showcases the application of deep learning in medical image analysis, particularly in segmenting fetal heads from ultrasound images.</p>
+
+<h2>Key Features</h2>
+<ul>
+    <li><strong>Technology Stack</strong>: Utilizes libraries like NumPy, PyTorch, OpenCV, PIL, Pandas, and OS.</li>
+    <li><strong>Architecture</strong>: The U-Net model comprises 23 convolutional layers, tailored for detailed image segmentation.</li>
+    <li><strong>Image Resolution</strong>: Processes images of size 572x572 pixels.</li>
+    <li><strong>High Accuracy</strong>: Achieves a Dice score of 95.6% on the test set and a pixel-to-pixel accuracy of 97.4%.</li>
+    <li><strong>Hardware Used</strong>: Training and inference performed on an RTX 3080 Ti GPU.</li>
+    <li><strong>Data Augmentation</strong>: Includes random rotations, horizontal flips, and vertical flips to enhance model robustness.</li>
+    <li><strong>Dataset Size</strong>: Training: 799 images, Validation: 200 images, Testing: 335 images.</li>
+    <li><strong>Binary Segmentation</strong>: Predicts binary masks for segmenting the fetal head.</li>
+    <li><strong>Loss Plotting</strong>: Visualizes training and validation loss over epochs.</li>
+    <li><strong>Early Stopping</strong>: Implements early stopping with checkpoints for saving the best model weights.</li>
+</ul>
+
+<h2>Learning Parameters</h2>
+<ul>
+    <li><strong>Learning Rate</strong>: 0.01</li>
+    <li><strong>Batch Size</strong>: 2</li>
+</ul>
+
+<h2>Implementation Details</h2>
+<ul>
+    <li><strong>U-Net Model</strong>: Designed specifically for medical image segmentation. Includes a downsampling and upsampling path.</li>
+    <li><strong>Loss Function</strong>: Combines Binary Cross Entropy and Dice Loss.</li>
+    <li><strong>Performance Metrics</strong>: Dice score and pixel-to-pixel accuracy.</li>
+</ul>
+
+<h2>Usage</h2>
+<ol>
+    <li><strong>Setup</strong>: Install required Python libraries.</li>
+    <li><strong>Data Preparation</strong>: Collect and preprocess ultrasound images.</li>
+    <li><strong>Training</strong>: Train the U-Net model on the dataset.</li>
+    <li><strong>Evaluation</strong>: Evaluate the model on the test set.</li>
+    <li><strong>Inference</strong>: Use the model for segmenting new images.</li>
+</ol>
+
+<h2>Additional Information</h2>
+<ul>
+    <li><strong>Data Augmentation</strong>: Ensures model generalization.</li>
+    <li><strong>Early Stopping and Checkpoints</strong>: Prevents overfitting and saves the best model.</li>
+    <li><strong>Visualization</strong>: Loss plots provide training insights.</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>The U-Net model for fetal head segmentation demonstrates effective use of deep learning in medical image analysis. This model can assist in automated ultrasound image analysis, contributing to prenatal care and diagnostics.</p>
+
+</body>
+</html>
